@@ -25,7 +25,7 @@ function showWriterForm(){
 <%@ include file="../common/header.jsp" %>
 <hr style="clear:both">
 <h1 align="center">게시글 목록</h1>
-<h4 aling="center">총 게시글 갯수 : <%=listCount %></h4>
+<h4 align="center">총 게시글 갯수 : <%=listCount %></h4>
 <%if(loginUser != null){ %>
 	<div style="align:center; text-align:center;">
 	<button onclick="showWriterForm();">글쓰기</button>
@@ -49,9 +49,9 @@ function showWriterForm(){
 			<td>
 			<%-- 댓글일 때는 제목을 들여쓰기함 --%>
 			<% if(b.getBoardReplyLev() == 1) { //원글의 댓글일 때 %>
-				&nbsp; &nbsp; └
+				&nbsp; &nbsp; →
 			<% }else if(b.getBoardReplyLev() == 2) { //댓글의 댓글일 때%>
-				&nbsp; &nbsp; &nbsp; &nbsp; └└
+				&nbsp; &nbsp; &nbsp; &nbsp; →→
 			<% }%>
 			<%-- 로그인 상태일 때만 상세보기 링크 설정함 --%>
 			<% if(loginUser != null){ %>

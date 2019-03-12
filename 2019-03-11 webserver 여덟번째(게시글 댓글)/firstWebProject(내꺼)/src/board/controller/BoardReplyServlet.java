@@ -52,6 +52,7 @@ public class BoardReplyServlet extends HttpServlet {
 		replyBoard.setBoardTitle(boardTitle);
 		replyBoard.setBoardWriter(boardWriter);
 		replyBoard.setBoardReplyLev(originBoard.getBoardReplyLev() + 1);
+		System.out.println("lev : "+replyBoard.getBoardReplyLev());
 		 //참조하는 원글 번호
 		replyBoard.setBoardRef(originBoard.getBoardRef());
 		if(replyBoard.getBoardReplyLev() == 2) { //댓글의 댓글일 때

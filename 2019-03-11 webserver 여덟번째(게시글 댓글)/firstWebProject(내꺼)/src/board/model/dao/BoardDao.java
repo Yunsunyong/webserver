@@ -66,7 +66,8 @@ public class BoardDao {
 				b.setBoardOriginalFileName(rset.getString("board_original_filename"));
 				b.setBoardRenameFileName(rset.getString("board_rename_filename"));
 				b.setBoardRef(rset.getInt("board_ref"));
-				b.setBoardReplyRef(rset.getInt("board_reply_lev"));
+				b.setBoardReplyRef(rset.getInt("board_reply_ref"));
+				b.setBoardReplyLev(rset.getInt("board_reply_lev"));
 				b.setBoardReplySeq(rset.getInt("board_reply_seq"));
 				b.setBoardReadCount(rset.getInt("board_readcount"));
 				b.setBoardDate(rset.getDate("board_date"));
@@ -122,7 +123,8 @@ public class BoardDao {
 				b.setBoardOriginalFileName(rset.getString("board_original_filename"));
 				b.setBoardRenameFileName(rset.getString("board_rename_filename"));
 				b.setBoardRef(rset.getInt("board_ref"));
-				b.setBoardReplyRef(rset.getInt("board_reply_lev"));
+				b.setBoardReplyLev(rset.getInt("board_reply_lev"));
+				b.setBoardReplySeq(rset.getInt("board_reply_seq"));
 				b.setBoardReplySeq(rset.getInt("board_reply_seq"));
 				b.setBoardReadCount(rset.getInt("board_readcount"));
 				b.setBoardDate(rset.getDate("board_date"));
